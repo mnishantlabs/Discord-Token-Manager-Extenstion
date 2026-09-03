@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Discord Token Manager — local session vault for Chrome &amp; Firefox</title>
+  <meta name="description" content="A quiet, local-first browser extension to save, manage, verify and switch Discord session tokens. Available for Chrome and Firefox.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="favicon.png" alt=""><span>Discord <b>Token Manager</b></span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="download.html">Download</a>
+        <a href="setup.html">Setup</a>
+        <a href="faq.html">FAQ</a>
+        <a href="changelog.html">Changelog</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <span class="badge">Free · Open Source · Local-first</span>
+    <h1>Manage your Discord sessions <span class="grad">quietly &amp; locally</span></h1>
+    <p class="lead">Save, organize, verify and switch between Discord session tokens right from your toolbar. Everything stays in your browser — nothing is uploaded anywhere.</p>
+    <div>
+      <a class="btn primary" href="download.html">
+        <svg class="dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download for Chrome
+      </a>
+      <a class="btn ghost" href="setup.html" style="margin-left:10px">How to install</a>
+    </div>
+  </header>
+
+  <section class="block container">
+    <h2 class="sec">Why it's useful</h2>
+    <p class="secsub">A small toolbar popup that gives you full control over saved sessions without leaving Discord workflows.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">🗂️</div><h3>Personal vault</h3><p>Group, favorite, tag and search your saved sessions. Add manually or from the active session.</p></div>
+      <div class="card"><div class="ic">🚀</div><h3>One-click switch</h3><p>Apply a saved session to a discord.com tab and reload — fast account rotation.</p></div>
+      <div class="card"><div class="ic">✅</div><h3>Verify tokens</h3><p>Check individual or all saved tokens right from the popup.</p></div>
+      <div class="card"><div class="ic">💾</div><h3>Copy &amp; export</h3><p>Copy a token in one click, or export a JSON backup of everything.</p></div>
+      <div class="card"><div class="ic">👤</div><h3>Account details</h3><p>See user ID, status, joined date, badges and notes for each session.</p></div>
+      <div class="card"><div class="ic">🛡️</div><h3>100% local</h3><p>Data lives in browser storage only. No accounts, no telemetry, no servers.</p></div>
+    </div>
+  </section>
+
+  <section class="block container">
+    <h2 class="sec">Browser support</h2>
+    <table>
+      <tr><th>Browser</th><th>Manifest</th><th>Package</th></tr>
+      <tr><td>Chrome, Edge, Brave, Opera, Arc</td><td>MV3</td><td>chrome zip</td></tr>
+      <tr><td>Firefox</td><td>MV2</td><td>firefox zip</td></tr>
+    </table>
+    <div class="callout">
+      <b>Heads up:</b> this extension manages session tokens, which may violate Discord's Terms of Service.
+      Use it for your own personal, low-volume use, at your own risk. It is not affiliated with Discord.
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div>Discord Token Manager · <a href="https://github.com/mnishantlabs/Discord-Token-Manager-Extenstion" target="_blank" rel="noopener">GitHub</a> · MIT License</div>
+  </footer>
+</body>
+</html>
