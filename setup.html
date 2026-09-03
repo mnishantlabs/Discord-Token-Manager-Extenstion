@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Setup &amp; Install — Discord Token Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="favicon.png" alt=""><span>Discord <b>Token Manager</b></span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="setup.html" class="active">Setup</a>
+        <a href="faq.html">FAQ</a>
+        <a href="changelog.html">Changelog</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero container" style="padding-bottom:10px">
+    <span class="badge">Step by step</span>
+    <h1>Setup &amp; install</h1>
+    <p class="lead">Loading the extension takes under a minute. Because this is a private-build extension, you install it as an <b>unpacked</b> (temporary) add-on.</p>
+  </section>
+
+  <section class="block container">
+    <h2 class="sec" id="chromium">Chrome · Edge · Brave · Opera · Arc</h2>
+    <p class="secsub">These are all Chromium browsers and use the exact same steps.</p>
+
+    <div class="step"><div class="num">1</div><div><h4>Download the Chrome package</h4><p>From the <a href="download.html">Download</a> page, grab the <b>Chrome &amp; Chromium</b> zip and unzip it somewhere you'll remember (e.g. <code>Downloads</code>). Keep the <code>chrome</code> folder intact.</p></div></div>
+    <div class="step"><div class="num">2</div><div><h4>Open the extensions page</h4><ul><li>Chrome — <code>chrome://extensions</code></li><li>Edge — <code>edge://extensions</code></li><li>Brave — <code>brave://extensions</code></li><li>Opera — <code>opera://extensions</code></li><li>Arc — Settings → Extensions</li></ul></div></div>
+    <div class="step"><div class="num">3</div><div><h4>Turn on Developer mode</h4><p>Use the toggle in the top-right corner of the extensions page.</p></div></div>
+    <div class="step"><div class="num">4</div><div><h4>Click "Load unpacked"</h4><p>Select the <b>unzipped <code>chrome</code> folder</b> (the one containing <code>popup.html</code> and <code>manifest.json</code> — not the zip itself).</p></div></div>
+    <div class="step"><div class="num">5</div><div><h4>Pin it &amp; open</h4><p>The Discord Token Manager icon appears in your toolbar. Click it to open the popup and add your first session.</p></div></div>
+
+    <div class="callout">
+      <b>Note:</b> because Developer mode is enabled, Chrome may show a "Disable developer mode extensions" warning — that's normal. On some managed devices this mode is blocked by the admin.
+    </div>
+  </section>
+
+  <section class="block container">
+    <h2 class="sec" id="firefox">Firefox</h2>
+    <p class="secsub">Firefox loads private-build extensions as a temporary add-on (it stays active until you close Firefox).</p>
+
+    <div class="step"><div class="num">1</div><div><h4>Download the Firefox package</h4><p>Grab the <b>Firefox</b> zip from <a href="download.html">Download</a>, unzip it, and keep the <code>firefox</code> folder intact.</p></div></div>
+    <div class="step"><div class="num">2</div><div><h4>Open the add-on debugging page</h4><p>Type <code>about:debugging#/runtime/this-firefox</code> in the address bar and press Enter.</p></div></div>
+    <div class="step"><div class="num">3</div><div><h4>Load Temporary Add-on</h4><p>Click the <b>Load Temporary Add-on…</b> button and select <b><code>firefox/manifest.json</code></b>.</p></div></div>
+    <div class="step"><div class="num">4</div><div><h4>Pin &amp; open</h4><p>The extension icon appears in the toolbar. Click it to open the popup.</p></div></div>
+
+    <div class="callout green">
+      <b>Temporary add-ons reset on restart.</b> To avoid re-loading after every restart, use a dedicated Firefox profile that you keep open, or sign it via AMO (for private, personal use).
+    </div>
+  </section>
+
+  <section class="block container">
+    <h2 class="sec">Using the extension</h2>
+    <div class="grid">
+      <div class="card"><h3>Add a session</h3><p>Click the <b>Add</b> chip in the Vault and paste a token, or use the <b>Save</b> button on the active-session card.</p></div>
+      <div class="card"><h3>Switch / launch</h3><p>Press <b>Switch</b> on a saved session — a discord.com tab is opened and logged in automatically.</p></div>
+      <div class="card"><h3>Verify</h3><p>Press <b>Verify</b> on a card or <b>Verify all</b> to check token validity.</p></div>
+      <div class="card"><h3>Backup</h3><p>Use <b>Backup</b> in the Vault to export a JSON file, ready to restore later.</p></div>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div>Discord Token Manager · <a href="https://github.com/mnishantlabs/Discord-Token-Manager-Extenstion" target="_blank" rel="noopener">GitHub</a> · MIT License</div>
+  </footer>
+</body>
+</html>

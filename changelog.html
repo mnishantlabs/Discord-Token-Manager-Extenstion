@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Changelog — Discord Token Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="favicon.png" alt=""><span>Discord <b>Token Manager</b></span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="setup.html">Setup</a>
+        <a href="faq.html">FAQ</a>
+        <a href="changelog.html" class="active">Changelog</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero container" style="padding-bottom:10px">
+    <span class="badge">Version history</span>
+    <h1>Changelog</h1>
+  </section>
+
+  <section class="block container">
+    <div class="ver-item">
+      <h3>v1.4.1 <span class="tag">Latest</span></h3>
+      <ul>
+        <li>Added a <b>Save</b> button to the active-session card to store the current token in the vault instantly.</li>
+        <li>Removed the duplicate full-width "Add Session" button — the Vault now has a single <b>Add</b> action.</li>
+        <li>Added visible <b>Copy</b> and <b>Details</b> buttons (+ <b>More</b> menu) on every vault card.</li>
+        <li>Account cards now always show a picture (initials fallback while the avatar loads).</li>
+        <li>Bundled official extension icons (16/32/48/128).</li>
+        <li>Added this public release, download site and packages.</li>
+      </ul>
+    </div>
+    <div class="ver-item">
+      <h3>v1.4.0</h3>
+      <ul>
+        <li>Material 3 redesign of the popup (now-playing card, two-row cards, bottom nav, FAB).</li>
+        <li>Real tab switching across Vault / Import / Settings / Lock.</li>
+        <li>Strict <code>discord.com</code>-only launch matching to prevent token injection on malicious pages.</li>
+        <li>Manrope type system across the UI.</li>
+      </ul>
+    </div>
+    <div class="ver-item">
+      <h3>Older versions</h3>
+      <ul>
+        <li>Core vault, add/verify/export, copy token, launch &amp; switch flows.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div>Discord Token Manager · <a href="https://github.com/mnishantlabs/Discord-Token-Manager-Extenstion" target="_blank" rel="noopener">GitHub</a> · MIT License</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>FAQ — Discord Token Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><img src="favicon.png" alt=""><span>Discord <b>Token Manager</b></span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="download.html">Download</a>
+        <a href="setup.html">Setup</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="changelog.html">Changelog</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero container" style="padding-bottom:10px">
+    <span class="badge">Common questions</span>
+    <h1>FAQ</h1>
+  </section>
+
+  <section class="block container">
+    <div class="faq">
+      <details open>
+        <summary>Is my data uploaded anywhere?</summary>
+        <div class="ans">No. Tokens, notes and settings are stored <b>only</b> in your browser's local <code>storage</code>. There are no accounts, no servers and no telemetry. Token validation calls go directly to Discord's API from your browser.</div>
+      </details>
+      <details>
+        <summary>Is this safe / against Discord's rules?</summary>
+        <div class="ans">Token-based authentication can violate Discord's Terms of Service and may lead to an account action. This is a tool for your own personal, low-volume use. Use it at your own risk; it is not affiliated with Discord.</div>
+      </details>
+      <details>
+        <summary>Why is there no "Install from the Chrome Web Store" button?</summary>
+        <div class="ans">Publishing to the Chrome Web Store or Firefox AMO requires developer accounts, store review, and may be rejected for token managers. This project ships as <b>load-unpacked / temporary add-on</b> packages instead — fully functional, just installed by hand.</div>
+      </details>
+      <details>
+        <summary>Does it work on Edge / Brave / Opera?</summary>
+        <div class="ans">Yes. They are Chromium-based and load the MV3 <b>chrome</b> package the same way Chrome does. Use the Chrome zip.</div>
+      </details>
+      <details>
+        <summary>The extension resets after restarting Firefox.</summary>
+        <div class="ans">Temporary add-ons are removed when Firefox closes. Keep a dedicated profile or re-load after startup. On Chrome, unpacked extensions persist until you remove them.</div>
+      </details>
+      <details>
+        <summary>How do I back up / restore my sessions?</summary>
+        <div class="ans">Use the <b>Backup</b> chip in the Vault to export a JSON file. Restore it later on the <b>Import</b> tab by pasting the JSON.</div>
+      </details>
+      <details>
+        <summary>An account shows no picture / name yet.</summary>
+        <div class="ans">Details are fetched when a token is verified or saved. If the network call fails, the card falls back to initials. Press <b>Verify</b> to refresh.</div>
+      </details>
+      <details>
+        <summary>How do I update to a new version?</summary>
+        <div class="ans">Download the new zip and re-load the unpacked folder. Your saved data lives in the browser and survives updates.</div>
+      </details>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div>Discord Token Manager · <a href="https://github.com/mnishantlabs/Discord-Token-Manager-Extenstion" target="_blank" rel="noopener">GitHub</a> · MIT License</div>
+  </footer>
+</body>
+</html>
